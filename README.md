@@ -1,4 +1,4 @@
-# **NUIT_INFO**
+# **NUIT DE L'INFO**
 
 Bienvenue sur notre site internet ! Plongez dans un univers ludique et enrichissant pour découvrir les fascinantes similitudes entre le corps humain et les océans.
 
@@ -15,7 +15,7 @@ Bienvenue sur notre site internet ! Plongez dans un univers ludique et enrichiss
 
 ---
 
-### **Instructions spéciales :**
+### ** WARNING : À lire uniquement si vous ne parvenez pas à avancer :**
 
 - **Pour accéder aux podcasts :**  
    Discutez avec le chatbot pour obtenir un indice. Celui-ci vous guidera vers une "étoile" qui débloquera l'accès.  
