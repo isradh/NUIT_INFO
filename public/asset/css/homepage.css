@@ -223,3 +223,8 @@ nav ul li a:hover {
   height: 300px;
   background: url("../images/starfish.png") no-repeat center/contain;
 }
+
+
+nav img{
+  width: 1.3vw;
+}

@@ -328,16 +328,22 @@ tortues.forEach((tortue)=>{
 // Pour le cookie cauchemar
 
 
-/*
+let compte = 0
 playButton.addEventListener("mouseover", () => {
-    const randomX = Math.floor(Math.random() * 90) + "%"; // Entre 0% et 90% (évite les bords)
-    const randomY = Math.floor(Math.random() * 90) + "%";
+    if(compte!==8){
+        compte++;
+        const randomX = Math.floor(Math.random() * 90) + "%"; // Entre 0% et 90% (évite les bords)
+        const randomY = Math.floor(Math.random() * 90) + "%";
 
-    playButton.style.position = "absolute";
-    playButton.style.left = randomX;
-    playButton.style.top = randomY;
+        playButton.style.position = "absolute";
+        playButton.style.left = randomX;
+        playButton.style.top = randomY;
+    }
+    else{
+        playButton.textContent="Vous êtes nuls";
+    }
 });
 
-*/
+
 
 

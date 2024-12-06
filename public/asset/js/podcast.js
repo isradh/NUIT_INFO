@@ -35,8 +35,8 @@ function createWaterElements() {
 
             // ajout de l'evenement sur l'étoile
 
-            star.addEventListener('click',() =>{
-                podcast.style.display='flex';
+            star.addEventListener('click', () => {
+                podcast.style.display = 'flex';
                 audio.play();
             })
         } else {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (lowerMessage.includes('caca')) {
             return "prout";
         } else {
-            return "Je suis un chatbot classique, mes créateurs n'ont aucune connaissance sur l'ile aux singes";
+            return "Je suis un chatbot classique, mes créateurs n'ont aucune connaissance sur l'ile aux singes mais ils aiment bien les étoiles";
         }
     }
 });
