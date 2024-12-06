@@ -5,7 +5,6 @@ function createStarfish() {
             <animate attributeName="fill" values="#ff9966;#ffbb99;#ff9966" dur="3s" repeatCount="indefinite"/>
         </path>
     </svg>`;
-
     const starfish = document.createElement('div');
     starfish.className = 'starfish';
     starfish.innerHTML = starfishSVG;
@@ -21,10 +20,9 @@ function createWaterElements() {
     const numberOfDrops = 30;
     const numberOfStarfish = 8;
 
-    // Clear existing elements
     ocean.innerHTML = '';
 
-    // Add starfish
+    // ajt etoiles
     for (let i = 0; i < numberOfStarfish; i++) {
         if (i === 4) {
             const podcast = document.querySelector('.podcast-container');
@@ -148,8 +146,4 @@ document.addEventListener('DOMContentLoaded', () => {
             return "Je suis un chatbot classique, mes créateurs n'ont aucune connaissance sur l'ile aux singes";
         }
     }
-
-
-
-
 });
