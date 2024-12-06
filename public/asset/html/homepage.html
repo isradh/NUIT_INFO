@@ -38,5 +38,113 @@
         <div class="starfish"></div>
       </section>
     </div>
+
+    <div class="tout">
+      <section class="human-body">
+        <div class="container">
+          <img src="../images/body-img.png" alt="Corps Humain" />
+          <button
+            class="button heart"
+            onclick="showPopup('Cœur', 'Pompe thermohaline : un processus océanographique clé qui agit comme un moteur de la circulation océanique globale. Elle joue un rôle crucial dans le transport des masses d\'eau (courants), des nutriments et de la chaleur à travers les océans.')"
+          >
+            Cœur
+          </button>
+          <button
+            class="button lungs"
+            onclick="showPopup('Poumons', 'Les échanges gazeux se produisent entre l\'air et le sang dans les alvéoles pulmonaires. Dans les océans, les échanges gazeux entre l\'atmosphère et l\'océan permettent d\'absorber du dioxyde de carbone (CO₂) et de libérer de l\'oxygène, équilibrant ainsi les gaz essentiels à la vie.')"
+          >
+            Poumons
+          </button>
+          <button
+            class="button brain"
+            onclick="showPopup('Cerveau', 'Le cerveau humain et le poulpe partagent des capacités cognitives. Le poulpe, surnommé l\'intelligence des océans, possède un cerveau complexe qui lui permet de résoudre des problèmes complexes.')"
+          >
+            Cerveau
+          </button>
+          <button
+            class="button stomach"
+            onclick="showPopup('Estomac', 'L\'estomac humain digère les aliments à l\'aide d\'acides et d\'enzymes pour les transformer en nutriments absorbables. Les herbiers marins, quant à eux, captent la lumière et les nutriments pour effectuer la photosynthèse.')"
+          >
+            Estomac
+          </button>
+          <button
+            class="button liver"
+            onclick="showPopup('Foie', 'Le foie détoxifie le sang et produit la bile pour la digestion des graisses. Les coraux et les éponges marines filtrent les particules de l\'eau, éliminent les impuretés et favorisent la circulation des nutriments.')"
+          >
+            Foie
+          </button>
+          <button
+            class="button temperature"
+            onclick="showPopup('Température', 'Le corps humain régule sa température autour de 37 degrés. L\'océan joue un rôle crucial en régulant la température de la planète grâce à ses courants marins et sa capacité à redistribuer la chaleur solaire.')"
+          >
+            Température
+          </button>
+          <button
+            class="button veins"
+            onclick="showPopup('Veines', 'Les veines transportent le sang désoxygéné et les nutriments dans le corps. De même, les algues dans l\'océan dépendent des courants marins pour disperser les nutriments et les particules essentielles.')"
+          >
+            Veines
+          </button>
+        </div>
+      </section>
+
+      <!-- Fenêtre Pop-up à droite -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <div class="croix">
+            <span class="close" onclick="closePopup()">&times;</span>
+          </div>
+          <div class="titrepopup">
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showPopup(title, text) {
+        const popup = document.getElementById("popup");
+
+        // Définir le contenu du pop-up
+        document.getElementById("popup-title").innerText = title;
+        document.getElementById("popup-text").innerText = text;
+
+        // Afficher le pop-up
+        popup.style.display = "block";
+      }
+
+      // Fonction pour fermer la pop-up
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+
+      // Fonction pour fermer la fenêtre pop-up
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+      // Fonction pour déplacer la pop-up avec le défilement de la page
+      window.addEventListener("scroll", function () {
+        const popup = document.getElementById("popup");
+        const bodyImage = document.querySelector(".human-body img");
+
+        // Position et dimensions de l'image du corps humain
+        const bodyImageRect = bodyImage.getBoundingClientRect();
+        const bodyImageTop = bodyImageRect.top + window.scrollY;
+        const bodyImageBottom = bodyImageRect.bottom + window.scrollY;
+
+        // Calculer la position verticale en fonction du défilement de la page
+        const scrollY = window.scrollY || window.pageYOffset;
+
+        // Limiter la position de la pop-up à l'intérieur des limites de l'image
+        if (scrollY + 50 < bodyImageTop) {
+          popup.style.top = bodyImageTop + "px"; // Aligné avec le haut de l'image
+        } else if (scrollY + 50 > bodyImageBottom - popup.offsetHeight) {
+          popup.style.top = bodyImageBottom - popup.offsetHeight + "px"; // Aligné avec le bas de l'image
+        } else {
+          popup.style.top = 50 + scrollY + "px"; // Position normale
+        }
+      });
+    </script>
   </body>
 </html>
