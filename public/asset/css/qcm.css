@@ -93,7 +93,7 @@
     }
 }
 
-/***********TORTUE ***************/
+/***********TORTUE flotte ***************/
 
 @keyframes float {
     0% {
@@ -119,9 +119,7 @@
     }
 }
 
-#tortue{
-    animation: float 4s infinite ease-in-out, sway 2s infinite linear;
-}
+
 
 
 
@@ -409,9 +407,12 @@ body {
     width: 100%;
     animation: fadeIn 0.5s ease-in;
 
+
 }
 #partie_tortue div img{
     width: 100%;
+    animation: float 10s infinite ease-in-out, sway 8s infinite linear;
+
 }
 
 
@@ -426,6 +427,7 @@ body {
     display: none;
     position: absolute;
 }
+
 .turtle:hover{
     cursor: pointer;
 }

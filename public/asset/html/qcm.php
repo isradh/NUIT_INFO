@@ -204,7 +204,7 @@
 
 
 <div id="partie_tortue">
-    <h2>Répondez aux questions, une réponse fausse abime la tortue !</h2>
+    <h2>Répondez aux questions, plusieurs réponses fausses abiment la <span class="turtle"> tortue </span>!</h2>
     <div class="tortue" id="jolie"><img src="../images/belle_tortue.png" alt="tortue jolie"></div>
     <div class="tortue" id="medium"><img src="../images/tortue_mid.png" alt="tortue moyenne"></div>
     <div class="tortue" id="moche"><img src="../images/tortue_malade.png" alt="tortue qui a pris cher"></div>
