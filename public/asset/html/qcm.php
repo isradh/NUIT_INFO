@@ -15,7 +15,7 @@
     <div class="logo">Salt & Soul</div>
     <nav>
         <ul>
-            <li><a href="homepage.html">Accueil</a></li>
+            <li><a href="../../../index.html">Accueil</a></li>
             <li><a href="qcm.php">Jeu</a></li>
             <li>
                 <a href="podcast.html">
