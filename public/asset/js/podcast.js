@@ -74,11 +74,9 @@ function createWaterElements() {
         ocean.appendChild(ripple);
     }
 }
-
-// Create initial water elements
+//eau
 createWaterElements();
 
-// Recreate water elements periodically to maintain animation
 setInterval(createWaterElements, 12000);
 
 
@@ -92,19 +90,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInput = document.getElementById('userInput');
     const sendMessageButton = document.getElementById('sendMessage');
 
-    // Open the chatbot
     chatButton.addEventListener('click', () => {
         chatbot.style.display = 'flex';
         chatButton.style.display = 'none';
     });
 
-    // Close the chatbot
     closeChatButton.addEventListener('click', () => {
         chatbot.style.display = 'none';
         chatButton.style.display = 'block';
     });
 
-    // Handle sending messages
     sendMessageButton.addEventListener('click', handleUserMessage);
     userInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') handleUserMessage();
@@ -114,10 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const userMessage = userInput.value.trim();
         if (!userMessage) return;
 
-        // Add user's message to the chat
         addMessage(userMessage, 'user-message');
 
-        // Generate bot response
         const botResponse = getBotResponse(userMessage);
         setTimeout(() => addMessage(botResponse, 'bot-message'), 500);
 
@@ -131,6 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
         chatBody.appendChild(messageElement);
         chatBody.scrollTop = chatBody.scrollHeight;
     }
+
+    // toutes les reponses
 
     function getBotResponse(message) {
         const lowerMessage = message.toLowerCase();

@@ -303,10 +303,6 @@ playButton.addEventListener('click', () => {
 
 
 
-    // animer les bulles A FAIRE
-
-
-
 // Easter Egg mot tortue
 
 const tortues = document.querySelectorAll('.turtle');
