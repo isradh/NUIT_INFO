@@ -1,3 +1,13 @@
+
+
+/* la font */
+
+@font-face {
+  font-family: 'josefin sans';
+  src: url('../font/Josefin_Sans/static/JosefinSans-SemiBold.ttf')
+}
+
+
 html,
 body {
   margin: 0;
@@ -6,10 +16,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-family: "josefin sans", serif;
 }
 
 header {
