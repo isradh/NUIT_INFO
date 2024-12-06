@@ -15,7 +15,7 @@ Bienvenue sur notre site internet ! Plongez dans un univers ludique et enrichiss
 
 ---
 
-### ** WARNING : À lire uniquement si vous ne parvenez pas à avancer :**
+### **WARNING : À lire uniquement si vous ne parvenez pas à avancer :**
 
 - **Pour accéder aux podcasts :**  
    Discutez avec le chatbot pour obtenir un indice. Celui-ci vous guidera vers une "étoile" qui débloquera l'accès.  
