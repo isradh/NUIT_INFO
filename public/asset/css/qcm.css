@@ -4,7 +4,37 @@
     font-family: 'josefin sans';
     src: url('../font/Josefin_Sans/static/JosefinSans-SemiBold.ttf')
 }
+/* navBar */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ffaa;
+}
 
 .quiz-container {
     max-width: 600px;
@@ -132,17 +162,20 @@
     --water: #1e3d59;
 }
 
+
+
 body {
-    margin: 0;
     background: #1941af;
     color: var(--text-primary);
+    margin: 0;
     transition: all 0.3s;
     overflow-x: hidden;
     display: flex;
-    align-items: center;
     height: 100vh;
+    flex-direction: column;
     font-family: "josefin sans", sans-serif;
 }
+
 
 .coral-decoration {
     position: fixed;
@@ -443,4 +476,9 @@ body {
     color: white;
 }
 
+
+
+body > div:nth-child(2){
+    display: flex;
+}
 
