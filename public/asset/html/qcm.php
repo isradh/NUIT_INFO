@@ -17,12 +17,10 @@
         <ul>
             <li><a href="homepage.html">Accueil</a></li>
             <li><a href="qcm.php">Jeu</a></li>
-            <li><a href="#">Facts</a></li>
             <li>
-                <a href="#"><i class="search-icon">🔍</i></a>
-            </li>
-            <li>
-                <a href="#"><i class="menu-icon">☰</i></a>
+                <a href="podcast.html">
+                    <img src="../images/microphone.png" alt="micro">
+                </a>
             </li>
         </ul>
     </nav>
@@ -232,5 +230,8 @@
         <img src="../images/tortue.png" alt="giga tortue">
     </div>
 </div>
+<footer>
+    <p> Designed by Mafia K1fry</p>
+</footer>
 </body>
 </html>

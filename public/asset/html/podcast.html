@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>QCM - S&S</title>
+    <link rel="stylesheet" href="../css/podcast.css"/>
+    <base href="">
+    <script src="../js/podcast.js" type="module"></script>
+</head>
+
+<body>
+<header>
+    <div class="logo">Salt & Soul</div>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Accueil</a></li>
+            <li><a href="qcm.php">Jeu</a></li>
+            <li>
+                <a href="podcast.html">
+                    <img src="../images/microphone.png" alt="micro">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="ocean" id="ocean"></div>
+<div>
+    <h2>Retrouvez sur cette page le podcast </h2>
+</div>
+<div class="chatbot">
+    <div class="chat-header">
+        <h3>Chatbot</h3>
+        <button id="closeChat">×</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+        <div class="bot-message">Bonjour</div>
+    </div>
+    <div class="chat-footer">
+        <label><input type="text" id="userInput" placeholder="Votre message..." /></label>
+        <button id="sendMessage">Envoyer</button>
+    </div>
+</div>
+<section class="podcast-container">
+    <h3>Écoutez notre dernier épisode</h3>
+    <audio controls autoplay>
+        <source src="../copy_221E1AE6-E311-41C5-84C7-A1E9F6245CBB(1).mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas la lecture audio.
+    </audio>
+</section>
+<button id="openChat" class="chat-button">💬</button>
+
+<footer>
+    <p> Designed by Mafia K1fry</p>
+</footer>
+
+</body>
+</html>

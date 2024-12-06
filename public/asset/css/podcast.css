@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #1941af;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "josefin sans", sans-serif;
+    justify-content: space-between;
+}
+
+
+@font-face {
+    font-family: 'josefin sans';
+    src: url('../font/Josefin_Sans/static/JosefinSans-SemiBold.ttf')
+}
+/* navBar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ffaa;
+}
+
+
+nav img{
+    width: 1.3vw;
+}
+
+
+
+
+/* suite */
+
+.ocean {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.starfish {
+    position: absolute;
+    animation: float 10s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(20px) rotate(5deg);
+    }
+}
+
+.water-drop {
+    position: absolute;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(0, 150, 255, 0.3));
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+    animation: flow 12s infinite linear;
+    backdrop-filter: blur(2px);
+}
+
+@keyframes flow {
+    0% {
+        transform: translateX(-100%) translateY(0) rotate(0deg) scale(1);
+        opacity: 0;
+        border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    50% {
+        border-radius: 60% 40% 40% 60% / 40% 60% 40% 60%;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(200%) translateY(20px) rotate(360deg) scale(1.5);
+        opacity: 0;
+        border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+    }
+}
+
+.ripple {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: ripple 4s infinite ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+
+/* chatbot */
+
+/* Chatbot container */
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Chat header */
+.chat-header {
+    background:  #ffa273;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* Chat body */
+.chat-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+/* Chat footer */
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-footer button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background:  #ffa273;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Bot and user messages */
+.bot-message, .user-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.bot-message {
+    background: #e0e0e0;
+    align-self: flex-start;
+}
+
+.user-message {
+    background:  #ffa273;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Open Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffa273;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+/*footer */
+
+footer {
+    display: flex;
+    color:white;
+}
+
+footer p {
+    text-align: center;
+    width: 100vw;
+}
+
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 65px;
+    z-index: 1000;
+}
+
+
+/* podcast */
+.podcast-container{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+audio{
+    width: 20%;
+    border-radius: 15px;
+    outline: none;
+
+}
+
